@@ -1,0 +1,4 @@
+#Thu Mar 09 18:00:39 BRT 2023
+base.0=/home/breno/Documentos/Flutter-Projects/hello_world/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
