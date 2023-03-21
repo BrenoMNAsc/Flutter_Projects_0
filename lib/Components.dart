@@ -185,6 +185,7 @@ class HomeCarrousselCategories extends StatelessWidget {
 class HomeCarrousselRestaurants extends StatefulWidget {
   HomeCarrousselRestaurants({Key? key}) : super(key: key);
   final rests = RestaurantRepository.tabela;
+
   @override
   State<HomeCarrousselRestaurants> createState() => _HomeCarrousselRestaurantsState();
 }
