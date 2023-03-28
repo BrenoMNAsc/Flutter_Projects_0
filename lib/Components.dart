@@ -227,7 +227,7 @@ class _HomeCarrousselRestaurantsState extends State<HomeCarrousselRestaurants> {
                 ConstrainedBox(
                   constraints: BoxConstraints(maxWidth: 80),
                   child: Text(
-                    widget.rests[index].name,
+                    widget.rests[0].name,
                     textAlign: TextAlign.center,
                     style: const TextStyle(
                       color: Color.fromRGBO(5, 31, 50, 1),

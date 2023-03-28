@@ -21,26 +21,33 @@ class _RestaurantPageState extends State<RestaurantPage> {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            IconButton(onPressed: (){Navigator.pop(context);}, icon: Icon(Icons.arrow_back)),
-            Center(
-                child: const Text(
-              "Cariri Delivery",
-              style: TextStyle(
-                color: Color.fromRGBO(5, 31, 50, 1),
-                fontFamily: 'Inter',
-                fontSize: 32,
-                fontWeight: FontWeight.bold,
-              ),
-            ))
-          ],
-        ),
+        actions: [
+          IconButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              icon: Icon(Icons.arrow_back))
+        ],
+        title: Center(
+            child: const Text("Cariri Delivery",
+                style: TextStyle(
+                  color: Color.fromRGBO(5, 31, 50, 1),
+                  fontFamily: 'Inter',
+                  fontSize: 32,
+                  fontWeight: FontWeight.bold,
+                ))),
         elevation: 0,
         backgroundColor: const Color.fromRGBO(255, 227, 125, 1),
       ),
-    body: Center(child: Text(widget.rest.foods))
-      ,);
+      body: Column(children: [
+        Stack(children: [
+          Image(
+            image: AssetImage('assets/images/fundoRestaurant.png',
+            
+          )),
+
+        ])
+      ]),
+    );
   }
 }
